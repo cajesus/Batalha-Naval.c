@@ -15,7 +15,8 @@
 
    };
       //criar os 2 navios
-     int navio1[3],navio2[3] = {3, 3, 3};  // horizontal vertical
+     int navio1[3] = {3, 3, 3};  //  horizontal
+     int navio2[3] = {3, 3, 3};  //  vertical
 
    jogo[9][3] = navio1[0]; //9D  // horizontal
    jogo[9][4] = navio1[1]; //9E
@@ -29,25 +30,27 @@
 printf("**Batalha Naval:**\n");
 printf("\n");
 
-printf("A B C D E F G H I J\n"); 
+printf("  A B C D E F G H I J\n"); 
 
-    int linha,coluna;
+    int linha,colunaH;
 
-        for (linha = 0; linha < 10; linha++){
-printf("%d", linha);
-        for (coluna = 0; coluna < 10; coluna++){
-printf("%d", jogo[linha],[coluna]);
+        for (linha = 0; linha < 10; linha++){   
+printf("%d ", linha);
+        for (colunaH = 0; colunaH < 10; colunaH++){
+printf("%d ", jogo[linha][colunaH]);
         }
-        
+      printf("\n"); //pula linha apos cada loop completo
 }
 
 
 
 
-
+      printf("\n"); // pula ultima linha
 
 
 
 
     return 0;
   }
+
+  //Testado
